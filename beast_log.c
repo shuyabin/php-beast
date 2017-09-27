@@ -48,6 +48,7 @@ int beast_log_chown(uid_t uid, gid_t gid)
 void beast_write_log(beast_log_level level, const char *fmt, ...)
 {
 
+    return;
     struct tm local_tm, *result_tm;
     time_t the_time;
     char buf[64];
